@@ -14,13 +14,30 @@ header {
   
 }
 
-header .container {
-  width: 100%;
+
+.top-container {
+  display: flex;
+  align-items: stretch;
 }
 
-header .logo {
+.logo {
+  flex-grow: 1;
+}
 
-  text-align: left;
+.search {
+  flex-grow: 3;
+}
+
+.user {
+  flex-grow: 0.1;
+}
+
+.shop {
+  flex-grow: 0.1;
+}
+
+header .container {
+  width: 100%;
 }
 
 header .menu {
