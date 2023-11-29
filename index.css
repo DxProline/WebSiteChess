@@ -29,6 +29,10 @@ header .menu {
   padding-top: 10px;
 }
 
+header .user{
+  float: right;
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;
