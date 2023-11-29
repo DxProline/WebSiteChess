@@ -1,26 +1,47 @@
 body {
   background-color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@300;400;500;600;700&display=swap');
 
 header {
-  border-bottom: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  
 }
 
-.Menu-header {
-  display: none;
+header .container {
+  width: 100%;
+}
+
+header .logo {
+
+  text-align: left;
+}
+
+header .menu {
+  border-top: 2px solid black;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
 }
 
-.nav-item {
-  display: inline-block;
-  margin: 0 10px;
+nav a {
+  font-family:Great Vibes;
+  font-size: 40px;
   font-weight: bold;
+}
+
+main {
+  margin-top: 50px;
 }
 
 h1 {
@@ -30,8 +51,33 @@ h1 {
   margin-bottom: 0;
 }
 
-img {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 200px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 16px;
+  color: red;
 }
