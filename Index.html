@@ -43,7 +43,10 @@
           <input type="text" name="surname" placeholder="Zadejte své příjmení" class="form-text-button">
           <input type="text" name="mail" placeholder="Zadejte e-mail" class="form-text-button" onchange="checkEmail(this)">
           <input type="text" name="PhoneNumber" placeholder="Zadejte Telefoní Číslo" class="form-text-button" onchange="checkNumber(this)">
-          
+          <input type="radio" name="gender" value="female" id="žena" onchange="handleGenderChange('muž')"> Muž
+          <input type="radio" name="gender" value="male" id="Muž" onchange="handleGenderChange('žena')"> Žena
+          <input type="radio" name="gender" value="male" id="Něco" onchange="handleGenderChange('něco')"> Něco
+          <input type="radio" name="gender" value="změnatarifníhopásma" id="změnatarifníhopásma" onchange="handleGenderChange('něco')" checked> změnatarifníhopásma
 
           <button type="submit">Odeslat</button>
         </form>
