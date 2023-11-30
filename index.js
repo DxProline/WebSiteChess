@@ -23,11 +23,12 @@ function checkNumber(numberElement) {
 }
 
 function ShowMessageEmailProblem(){
-    let pElement = docunebt.createElement('p');
+    let pElement = document.createElement('p');
     pElement.classList.add("red");
     pElement.innerText = "V e-mailu chybí zavináč!"
+    if(document.querySelector("p.red")){
+        const formElement = document.querySelector("form")
+        formElement.insertAdjacentElement("afterend",pElement);
+    }
 
-    
 }
-
-const formElement = document.querySelector("")
