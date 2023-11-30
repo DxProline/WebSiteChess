@@ -1,7 +1,20 @@
-body {
+body a {
   background-color: white;
 }
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: Jirihofont;
+  src: url("GreatVibes-Regular.ttf");
+}
+body {
+  font-family: Jirihofont;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
 
 header {
 
@@ -19,6 +32,7 @@ header {
   display: flex;
   align-items: stretch;
 }
+
 
 .logo {
   flex-grow: 1;
@@ -50,30 +64,19 @@ header .user{
   float: right;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav a {
-  font-family:Great Vibes;
-  font-size: 40px;
-  font-weight: bold;
-}
-
 main {
   margin-top: 50px;
 }
 
 h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 p {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.5;
 }
 
@@ -101,4 +104,7 @@ footer {
 .product-price {
   font-size: 16px;
   color: red;
+}
+label{
+font-size: 24px;
 }
