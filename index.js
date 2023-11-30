@@ -9,3 +9,12 @@ function checkEmail(mailElement) {
     
 
 }
+function checkNumber(numberElement) {
+    if (numberElement.value.match(/^\d{9}$/)) {
+        // TRUE
+        numberElement.style.border = "2px solid green";
+    } else {
+        // FALSE
+        numberElement.style.border = "2px solid red";
+    }
+}
