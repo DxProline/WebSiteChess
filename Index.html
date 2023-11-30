@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "index.js" defer></script>
     <title>Vybavení MujSach</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -40,8 +41,8 @@
         <form action="#" method="get">
           <input type="text" name="firstname" placeholder="Zadejte své Křesní jméno" class="form-text-button">
           <input type="text" name="surname" placeholder="Zadejte své příjmení" class="form-text-button">
-          <input type="text" name="mail" placeholder="Zadejte e-mail" class="form-text-button">
-      
+          <input type="text" name="mail" placeholder="Zadejte e-mail" class="form-text-button" onchange="checkEmail(this)">
+          
 
           <button type="submit">Odeslat</button>
         </form>
